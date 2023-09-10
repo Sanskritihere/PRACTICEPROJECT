@@ -1,0 +1,245 @@
+body {
+  margin: 0;
+}
+* {
+  scroll-behavior: smooth;
+}
+
+nav {
+  /* border: 2px solid green; */
+  /* padding: 3vmax; */
+  display: flex;
+  height: 4vmax;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.445);
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  z-index: 10000;
+}
+.left {
+  /* border: 2px solid crimson; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+.left > a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 2vmax;
+  font-family: fantasy;
+}
+.mid {
+  /* border: 2px solid blue; */
+  width: 60%;
+  display: flex;
+  font-family: fantasy;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+.mid > a {
+  text-decoration: none;
+  color: black;
+  /* border: 1px solid violet; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-self:stretch ; */
+  /* font-size: 1.2vmax; */
+}
+.mid > a:hover {
+  border-bottom: 2px solid coral;
+  color: coral;
+}
+.right {
+  /* border: 2px solid rgb(255, 0, 247); */
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.right > img {
+  width: 25px;
+  /* border: 7px solid black; */
+  /* margin:auto; */
+}
+
+.home {
+  border: 1px solid red;
+  height: 90vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(237, 225, 219, 0.582),
+    rgba(240, 123, 123, 0.402),
+    rgb(250, 157, 123)
+  );
+  /* background-color: rgb(243, 231, 227); */
+  display: flex;
+}
+.container {
+  /* border: 1px solid green; */
+  width: 100%;
+}
+#rightcontainer {
+  display: flex;
+  justify-content: flex-end;
+  /* align-items: center; */
+}
+#rightcontainer > img {
+  width: 450px;
+  height: 600px;
+  margin-right: 10vmax;
+  margin-top: 3vmax;
+  filter: drop-shadow(0 0 10px black);
+}
+
+#leftcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 3vmax;
+  box-sizing: border-box;
+  align-items: center;
+}
+#leftcontainer > h1 {
+  display: flex;
+  align-items: self-end;
+
+  font-size: 4.5vmax;
+  margin-bottom: 2vmax;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#leftcontainer > h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 2vmax;
+  margin-top: -3%;
+}
+#leftcontainer > h4 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5vmax;
+  margin-top: 15%;
+  word-spacing: 3px;
+  text-align: center;
+  /* margin: 1vmax auto; */
+}
+#leftcontainer > a {
+  width: 15vmax;
+  padding: 19px;
+  border-radius: 30px;
+  border: none;
+  background-color: coral;
+  color: black;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#leftcontainer > button:hover {
+  background-color: rgb(197, 109, 78);
+}
+/* ------------------------------------------------------------------------------- */
+/* Section 2 code */
+
+#products {
+  /* height: 100vh; */
+  /* border: 1px solid rgb(234, 6, 6); */
+}
+#products > h1 {
+  color: rgb(12, 8, 6);
+  text-align: center;
+  margin: 5vmax auto;
+  font-size: 2.5vmax;
+  border-bottom: 5px solid coral;
+  width: 20vw;
+}
+.productscontainer {
+  display: flex;
+  background-color: rgb(246, 225, 218);
+  height: 150%;
+  max-width: 95vw;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px solid rgb(234, 6, 6); */
+}
+.product {
+  /* width: 20vmax; */
+  height: 26vmax;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin: 2vmax;
+}
+
+.product > img {
+  height: 22vmax;
+  width: 17vmax;
+  box-shadow: 0 0 5px rgb(7, 4, 2);
+}
+
+.product > h2 {
+  margin: 0%;
+}
+.product > h5 {
+  margin: 0;
+}
+.product :hover {
+  transform: translateY(-3%);
+}
+/* -------------------------- */
+footer {
+  margin-top: 7vmax;
+  height: 15vmax;
+  background-color: rgb(207, 85, 85);
+  color: wheat;
+  display: flex;
+  padding: 2vmax;
+}
+.leftfooter {
+  width: 20%;
+}
+.leftfooter > h4 {
+  font-size: 1.5vmax;
+  color: rgb(65, 3, 3);
+}
+.leftfooter > p {
+  font-size: 1.2vmax;
+}
+.leftfooter > img {
+  width: 8vmax;
+  cursor: pointer;
+}
+/* --------------------------------------- */
+.midfooter {
+  width: 60%;
+}
+.midfooter > h1 {
+  font-size: 3vmax;
+  color: rgb(11, 4, 1);
+  text-align: center;
+}
+.midfooter > p {
+  max-width: 70%;
+  margin: 1vmax auto;
+  font-size: 1.2vmax;
+  text-align: center;
+}
+/* ========================================== */
+.rightfooter {
+  width: 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightfooter > h4 {
+  font-size: 1.5vmax;
+  color: rgb(66, 2, 2);
+}
+.rightfooter > a {
+  text-decoration: none;
+  color: wheat;
+  margin: 0.5vmax;
+  font-size: 1.2vmax;
+}

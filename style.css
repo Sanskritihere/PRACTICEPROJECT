@@ -1,0 +1,84 @@
+body {
+  background-image: url("./bg.webp");
+  margin: 0;
+  height: 110vh;
+}
+header {
+  /* border: 2px solid white; */
+  color: white;
+  padding: 20px;
+  /* font-family: font-family: 'Nunito', sans-serif; */
+  /* font-family: 'Playfair', serif; */
+  font-family: "Playfair Display", serif;
+  position: sticky;
+  top: 0;
+}
+.logobox {
+  /* border: 2px solid burlywood; */
+  display: inline-block;
+  width: 150px;
+  font-size: larger;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar {
+  /* border: 2px solid greenyellow; */
+  width: 600px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+}
+.navbar > a {
+  color: azure;
+  padding: 20px;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+.navbar > a:hover {
+  color: grey;
+}
+#home {
+  color: grey;
+}
+.heading {
+  color: grey;
+  font-size: 70px;
+  position: relative;
+  left: 100px;
+}
+.heading + h3 {
+  color: rgb(88, 86, 86);
+  font-size: 25px;
+  position: absolute;
+  width: 500px;
+  left: 100px;
+  top: 260px;
+}
+.heading + h3 + p {
+  color: rgb(153, 147, 147);
+  position: absolute;
+  width: 500px;
+  left: 100px;
+  top: 360px;
+  word-spacing: 5px;
+  font-size: larger;
+}
+.enro {
+  color: rgb(153, 147, 147);
+  position: absolute;
+  width: 180px;
+  left: 100px;
+  top: 560px;
+  word-spacing: 5px;
+  font-size: medium;
+  background-color: black;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0, 5s;
+}
+.enro:hover {
+  background-color: rgba(128, 128, 128, 0.119);
+  color: rgb(222, 220, 220);
+}
